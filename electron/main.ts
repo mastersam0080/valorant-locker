@@ -22,7 +22,7 @@ function createWindow() {
     mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL);
   } else {
     // and load the index.html of the app.
-    mainWindow.loadFile("index.html");
+    mainWindow.loadFile("dist/index.html");
   }
 
   // Open the DevTools.

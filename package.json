@@ -5,10 +5,12 @@
   "keywords": [
     "valorant",
     "riot",
-    "agent",
-    "locker",
+    "instalocker",
     "electron",
-    "typescript"
+    "typescript",
+    "react",
+    "vite",
+    "tailwindcss"
   ],
   "author": "Sampreet Singh",
   "private": true,
@@ -16,8 +18,24 @@
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && electron-builder --dir",
+    "package": "vite build && electron-builder",
     "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.sampreet.valorant-locker",
+    "productName": "VALORANT Locker",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist",
+      "dist-electron"
+    ]
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -26,13 +44,10 @@
     "@types/react-dom": "^19.2.5",
     "@vitejs/plugin-react": "^6.1.0",
     "electron": "^44.0.0",
+    "electron-builder": "^26.15.3",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vite": "^8.2.2",
     "vite-plugin-electron": "^1.1.1"
-  },
-  "dependencies": {
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
   }
 }
