@@ -1,4 +1,5 @@
 import electron from "vite-plugin-electron/simple";
+import react from "@vitejs/plugin-react";
 
 export default {
   plugins: [
@@ -14,5 +15,6 @@ export default {
       // Optional: Use Node.js API in the Renderer process
       //   renderer: {},
     }),
+    react(),
   ],
 };
