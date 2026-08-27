@@ -18,6 +18,8 @@
     "start": "electron ."
   },
   "devDependencies": {
-    "electron": "^44.0.0"
+    "@types/node": "^26.4.0",
+    "electron": "^44.0.0",
+    "typescript": "^7.0.2"
   }
 }
