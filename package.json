@@ -13,13 +13,17 @@
   "author": "Sampreet Singh",
   "private": true,
   "type": "module",
-  "main": "main.js",
+  "main": "dist-electron/main.js",
   "scripts": {
-    "start": "electron ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/node": "^26.4.0",
     "electron": "^44.0.0",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vite-plugin-electron": "^1.1.1"
   }
 }

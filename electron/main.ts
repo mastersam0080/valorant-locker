@@ -13,12 +13,17 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "preload.mjs"),
     },
   });
 
-  // and load the index.html of the app.
-  mainWindow.loadFile("index.html");
+  // You can use `process.env.VITE_DEV_SERVER_URL` when the vite command is called `serve`
+  if (process.env.VITE_DEV_SERVER_URL) {
+    mainWindow.loadURL(process.env.VITE_DEV_SERVER_URL);
+  } else {
+    // and load the index.html of the app.
+    mainWindow.loadFile("index.html");
+  }
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();

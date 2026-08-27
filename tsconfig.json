@@ -45,5 +45,5 @@
     "skipLibCheck": true,
     "noEmit": true
   },
-  "include": ["src", "electron"]
+  "include": ["src", "electron", "vite.config.ts"]
 }
