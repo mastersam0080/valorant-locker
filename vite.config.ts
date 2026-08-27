@@ -1,7 +1,10 @@
+import { defineConfig } from "vite";
+
 import electron from "vite-plugin-electron/simple";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
-export default {
+const config = {
   plugins: [
     electron({
       main: {
@@ -16,5 +19,8 @@ export default {
       //   renderer: {},
     }),
     react(),
+    tailwindcss(),
   ],
 };
+
+export default defineConfig(config);
