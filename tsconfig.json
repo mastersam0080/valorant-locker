@@ -17,6 +17,11 @@
     // "types": ["node"],
     // and npm install -D @types/node
 
+    // Import aliases
+    "paths": {
+      "@/*": ["./*"]
+    },
+
     // Other Outputs
     // "sourceMap": true,
     // "declaration": true,

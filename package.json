@@ -23,15 +23,15 @@
     "preview": "vite preview"
   },
   "build": {
-    "appId": "com.sampreet.valorant-locker",
     "productName": "VALORANT Locker",
-    "directories": {
-      "output": "release"
-    },
+    "appId": "com.sampreet.valorant-locker",
     "files": [
       "dist",
       "dist-electron"
-    ]
+    ],
+    "directories": {
+      "output": "release"
+    }
   },
   "dependencies": {
     "react": "^19.2.8",

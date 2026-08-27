@@ -1,3 +1,5 @@
+import path from "node:path";
+
 import { defineConfig } from "vite";
 
 import electron from "vite-plugin-electron/simple";
@@ -21,6 +23,11 @@ const config = {
     react(),
     tailwindcss(),
   ],
+  resolve: {
+    alias: {
+      "@": path.resolve("."),
+    },
+  },
 };
 
 export default defineConfig(config);
