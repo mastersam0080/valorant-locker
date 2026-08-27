@@ -13,8 +13,11 @@
   "author": "Sampreet Singh",
   "private": true,
   "type": "module",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
   }
 }
