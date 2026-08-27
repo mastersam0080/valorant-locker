@@ -1,6 +1,7 @@
 // Modules to control application life and create native browser window\
-import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 import { app, BrowserWindow } from "electron";
 
 import "./handlers";
